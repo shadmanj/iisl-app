@@ -1,0 +1,80 @@
+<head>
+	<%= javascript_include_tag :defaults %>
+	<style>
+		body {padding-top: 70px;}
+    	#main-wrapper {padding-top: 5px;}
+    	#button-wrapper {text-align: center;}
+		.img-thumbnail {
+		background-color: #ccc;
+		cursor: pointer;
+		}
+
+		html, body {
+		    max-width: 100%;
+		    overflow-x: hidden;
+		}
+
+		.keep-color {
+			opacity: .4;
+			filter: alpha(opacity=40); /* For IE8 and earlier */
+		}
+
+	</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+  		<div class="container-fluid">
+    		<a class="navbar-brand" href="#">Image Annotation</a>
+  		</div>
+	</nav>
+
+	<div style="text-align: center;">
+		<h2>Select the images that contain collapsed buildings using the arrow keys and spacebar.</h2>
+	</div>
+
+	<!-- IMAGE THUMBNAILS -->
+	<div id="main-wrapper" class="wrapper" style="padding: 0px">
+		<!-- ROW 1-->
+		<div class="row row-eq-height">
+			<div style="padding-left: 20%;">
+				<div class="col-xs-6 col-sm-3" style="padding: 0">
+						<img id="image1" src="images/1.jpg" alt="Image to Analyze" class="img-thumbnail">
+				</div>
+
+				<div class="col-xs-6 col-sm-3" style="padding: 0">
+						<img id="image2" src="images/2.jpg" alt="Image to Analyze" class="img-thumbnail">
+				</div>
+
+				<div class="col-xs-6 col-sm-3" style="padding: 0">
+						<img id="image3" src="images/3.jpg" alt="Image to Analyze" class="img-thumbnail">
+				</div>
+			</div>
+		</div>
+
+		<!-- ROW 2 -->
+		<div class="row row-eq-height">
+			<div style="padding-left: 20%">
+				<div class="col-xs-6 col-sm-3" style="padding: 0">
+						<img id="image4" src="images/4.jpg" alt="Image to Analyze" class="img-thumbnail">
+				</div>
+
+				<div class="col-xs-6 col-sm-3" style="padding: 0">
+						<img id="image5" src="images/5.jpg" alt="Image to Analyze" class="img-thumbnail">
+				</div>
+
+				<div class="col-xs-6 col-sm-3" style="padding: 0">
+						<img id="image6" src="images/6.jpg" alt="Image to Analyze" class="img-thumbnail">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- SUBMIT BUTTON -->
+	<div class="span7 text-center" style="padding-top: 20px; padding-left: 275px; padding-right: 275px;" >
+		<button id="submit" type="button" class="btn btn-primary btn-block">SUBMIT</button>
+	</div>
+
+	
+</body>
